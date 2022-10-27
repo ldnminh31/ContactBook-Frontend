@@ -127,8 +127,9 @@ export default {
         }
       }
     },
+    // add contact
     goToAddContact() {
-      this.$router.push({ name: "contact.add" });
+      this.$router.push({ name: "contact.add", path: "/add-new-contact" });
     },
   },
   mounted() {

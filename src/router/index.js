@@ -20,6 +20,13 @@ const routes = [
     component: () => import("@/views/ContactEdit.vue"),
     props: (route) => ({ contactId: parseInt(route.params.id) }),
   },
+  // contact add
+  {
+    path: "/add-new-contact",
+    name: "contact.add",
+    component: () => import("@/views/ContactAdd.vue"),
+    // props: (route) => ({ contactId: parseInt(route.params.id) }),
+  },
 ];
 
 const router = createRouter({
